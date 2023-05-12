@@ -9,32 +9,63 @@
 html,
 body {
     height: 100vh;
-    overflow: hidden;
 }
 
 body{
     background-color: hotpink;
+    font-family: 'Roboto', sans-serif;
+}
+
+menu, ul, li {
+    list-style: none;
+}
+
+button {
+    padding: 1rem;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    gap: .25rem;
+    inset-inline: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+    z-index: 99;
+}
+
+header button {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0;
 }
 
 main{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
+    gap: 1rem;
+    height: 100%;
+    padding-top: .5rem;
+    padding-inline: .5rem;
+}
+
+body:has(header) main{
+    padding-top: 15vh;
 }
 
 main button{
-    scroll-margin-top: .5rem;
-    flex: 1 0 calc(100vh - 1rem);
+    flex: 1 0 auto;
     position: relative;
-    scroll-snap-align: start;
-    margin: 1rem .5rem;
-    padding: 1rem;
-    background: #fff;
-    border: 3px solid #000;
-    border-radius: 20px;
     color: #000;
     font-size: 1.5rem;
     font-weight: 700;
@@ -44,3 +75,51 @@ main button{
     cursor: pointer;
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section h2{
+    position: sticky;
+    top: calc(.5rem + 15vh);
+}
+
+main section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section div button {
+    flex: 0 1 50px;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+main section menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+main section menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main section menu li button{
+    display: block;
+    font-size: 1rem;
+    background-color: white;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,82 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
+    <header>
+        <button aria-label="Terug naar startpagina" data-href="index.html">
+            Terug naar startpagina
+        </button>
+        <h1>Kleding bekijken</h1>
+    </header>
     <main>
-        <h1>Kleding pagina</h1>
+        <section>
+            <div>
+                <h2 autofocus>
+                    Boven Kleding
+                </h2>
+            </div>
+            <menu>
+                <li>
+                    <button aria-label="Trui met stippen" data-id="1">
+                        <h3>Trui met stippen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Trui met strepen" data-id="2">
+                        <h3>Trui met strepen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Trui met ruiten" data-id="3">
+                        <h3>Trui met ruiten</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Trui met bloemen" data-id="4">
+                        <h3>Trui met bloemen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Trui met hartjes" data-id="5">
+                        <h3>Trui met hartjes</h3>
+                    </button>
+                </li>
+            </menu>
+        </section>
+        <section>
+            <h2>
+                Broeken
+            </h2>
+            <menu>
+                <li>
+                    <button aria-label="Broek met stippen" data-id="6">
+                        <h3>Broek met stippen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Broek met strepen" data-id="7">
+                        <h3>Broek met strepen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Broek met ruiten" data-id="8">
+                        <h3>Broek met ruiten</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Broek met bloemen" data-id="9">
+                        <h3>Broek met bloemen</h3>
+                    </button>
+                </li>
+                <li>
+                    <button aria-label="Broek met hartjes" data-id="10">
+                        <h3>Broek met hartjes</h3>
+                    </button>
+                </li>
+            </menu>
+        </section>
     </main>
 
-    <script src="/js/add-clothes.js" type="module"></script>
+    <script src="/js/clothes-index.js" type="module"></script>
+    <script src="/js/back.js" type="module"></script>
 </body>
 </html>
