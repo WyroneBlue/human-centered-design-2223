@@ -1,5 +1,6 @@
 console.log('Wagwan from app.js');
 import { speak, srSpeak } from './speech.js';
+import { startIdleCheck, stopIdleCheck } from './idle-check.js';
 const main = document.querySelector('main');
 const options = [
     document.querySelector('button[aria-label="kleren bekijken"]'),
@@ -27,4 +28,11 @@ options.forEach(option => {
         const label = target.getAttribute('aria-label');
         speak(label);
     });
+});
+
+startIdleCheck();
+
+window.addEventListener('click', () => {
+    console.log('window loaded');
+    stopIdleCheck();
 });

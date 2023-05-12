@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const back = document.querySelector('button[aria-label="Terug naar startpagina"]');
+const back = document.querySelector('header button');
 
 back.addEventListener('click', (e) => {
     const target = e.target;

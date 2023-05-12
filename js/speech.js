@@ -17,7 +17,7 @@ export function speak(text) {
     const speech = new SpeechSynthesisUtterance();
     speech.voice = currentVoice;
     speech.lang = "nl-NL";
-    speech.rate = 3;
+    speech.rate = 2;
     speech.volume = .8;
     speech.text = `${text}`;
 
