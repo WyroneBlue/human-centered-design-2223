@@ -82,9 +82,9 @@ I used the following design principles to make my decisions during the design pr
 ### Study Situation
 Before making a prototype you have to study the situation of the person you are designing for. During the interview and tests i paid attention to how Petra uses her phone and how she navigates through the app.
 
-By studying the situation of Petra I found out that she uses her phone like a normal person and can listen very well. She swipes through the app and uses the screen reader to read the text on the screen and even send a message.
+By studying the situation of Petra I found out that she likes to use her phone and uses her phone like a normal person and can listen very well. She swipes through the app and uses the screen reader to read the text on the screen and even send a message.
 
-I used these findings to make the prototype more suited for Petra.
+I used these findings to make a prototype that is suited for Petra.
 
 ### Prioritize Identity
 When designing for a specific person you have to prioritize their identity. You have to make sure that the product you are designing fits the person you are designing for.
