@@ -123,3 +123,9 @@ main section menu li button{
     padding: .5rem;
     border-radius: 5px;
 }
+
+main section menu li button:hover,
+main section menu li button:focus{
+    background-color: #000;
+    color: #fff;
+}

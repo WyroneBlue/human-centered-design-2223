@@ -31,7 +31,6 @@ options.forEach(option => {
 });
 
 startIdleCheck();
-
 window.addEventListener('click', () => {
     console.log('window loaded');
     stopIdleCheck();
